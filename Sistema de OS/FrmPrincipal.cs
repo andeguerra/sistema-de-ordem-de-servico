@@ -34,7 +34,11 @@ namespace Sistema_de_OS
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form cliente = new FrmCliente();
-            cliente.Show(this);
+            cliente.TopLevel = false;
+            cliente.Dock = DockStyle.Fill;
+            PnlFormularios.Controls.Add(cliente);
+            cliente.Show();
+            cliente.BringToFront();
         }
     }
 }

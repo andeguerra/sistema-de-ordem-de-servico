@@ -45,6 +45,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.PnlFormularios = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -154,9 +156,9 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel2.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(889, 19);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(909, 19);
             this.toolStripStatusLabel2.Spring = true;
-            this.toolStripStatusLabel2.Text = "Desenvolvido por Laercio Sá";
+            this.toolStripStatusLabel2.Text = "Desenvolvido por Anderson Guerra";
             // 
             // toolStripStatusLabel3
             // 
@@ -170,22 +172,22 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 24);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1244, 40);
-            this.panel2.TabIndex = 7;
+            this.panel2.Size = new System.Drawing.Size(1244, 50);
+            this.panel2.TabIndex = 9;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 64);
+            this.panel1.Location = new System.Drawing.Point(0, 74);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(52, 593);
-            this.panel1.TabIndex = 8;
+            this.panel1.Size = new System.Drawing.Size(52, 583);
+            this.panel1.TabIndex = 10;
             // 
             // button1
             // 
@@ -198,11 +200,30 @@
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Location = new System.Drawing.Point(52, 635);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1192, 22);
+            this.statusStrip2.TabIndex = 11;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // PnlFormularios
+            // 
+            this.PnlFormularios.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.PnlFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlFormularios.Location = new System.Drawing.Point(52, 74);
+            this.PnlFormularios.Name = "PnlFormularios";
+            this.PnlFormularios.Size = new System.Drawing.Size(1192, 561);
+            this.PnlFormularios.TabIndex = 12;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 681);
+            this.Controls.Add(this.PnlFormularios);
+            this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStrip1);
@@ -242,6 +263,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.Panel PnlFormularios;
     }
 }
 
