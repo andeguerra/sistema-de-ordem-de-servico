@@ -33,11 +33,22 @@ namespace Sistema_de_OS
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Instanciando o formulário
             Form cliente = new FrmCliente();
+
+            // TopLovel = Fora ou dentro de um Objeto
             cliente.TopLevel = false;
+
+            // DockStyle.Fill = Faz com que preencha toda tela (ou objeto, na qual ele esteja dentro)
             cliente.Dock = DockStyle.Fill;
+
+            // Adiciona o formulário inteiro no painel
             PnlFormularios.Controls.Add(cliente);
+
+            // Mostra o Formulário
             cliente.Show();
+
+            // Tráz o formulpario para frente
             cliente.BringToFront();
         }
     }
