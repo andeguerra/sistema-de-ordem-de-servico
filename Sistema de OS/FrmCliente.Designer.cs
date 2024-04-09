@@ -30,41 +30,52 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnFechar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.LightSalmon;
+            this.label1.BackColor = System.Drawing.Color.LightSlateGray;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1170, 40);
+            this.label1.Size = new System.Drawing.Size(1170, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Cliente";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 80);
+            this.textBox1.Location = new System.Drawing.Point(82, 83);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 27);
+            this.textBox1.Size = new System.Drawing.Size(166, 27);
             this.textBox1.TabIndex = 1;
+            // 
+            // BtnFechar
+            // 
+            this.BtnFechar.Location = new System.Drawing.Point(1038, 6);
+            this.BtnFechar.Name = "BtnFechar";
+            this.BtnFechar.Size = new System.Drawing.Size(120, 30);
+            this.BtnFechar.TabIndex = 2;
+            this.BtnFechar.Text = "Fechar";
+            this.BtnFechar.UseVisualStyleBackColor = true;
+            this.BtnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // FrmCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 550);
+            this.Controls.Add(this.BtnFechar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCliente";
             this.Text = "Cliente";
-            this.Load += new System.EventHandler(this.FrmCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,5 +85,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BtnFechar;
     }
 }

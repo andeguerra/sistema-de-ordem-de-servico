@@ -62,5 +62,10 @@ namespace Sistema_de_OS
             cliente.BringToFront();
 
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

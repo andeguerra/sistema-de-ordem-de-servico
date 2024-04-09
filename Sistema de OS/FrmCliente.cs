@@ -17,9 +17,9 @@ namespace Sistema_de_OS
             InitializeComponent();
         }
 
-        private void FrmCliente_Load(object sender, EventArgs e)
+        private void btnFechar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
