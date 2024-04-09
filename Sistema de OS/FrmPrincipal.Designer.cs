@@ -54,6 +54,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrosToolStripMenuItem,
             this.estoqueToolStripMenuItem,
@@ -80,32 +81,32 @@
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "&Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // serviçosToolStripMenuItem
             // 
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.serviçosToolStripMenuItem.Text = "&Serviços";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(119, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // oSToolStripMenuItem
             // 
             this.oSToolStripMenuItem.Name = "oSToolStripMenuItem";
-            this.oSToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.oSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.oSToolStripMenuItem.Text = "&OS";
             // 
             // estoqueToolStripMenuItem
@@ -130,6 +131,7 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
@@ -158,7 +160,7 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(909, 19);
             this.toolStripStatusLabel2.Spring = true;
-            this.toolStripStatusLabel2.Text = "Desenvolvido por Anderson Guerra";
+            this.toolStripStatusLabel2.Text = "Desenvolvido por Laercio Sá";
             // 
             // toolStripStatusLabel3
             // 
@@ -172,7 +174,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel2.BackColor = System.Drawing.Color.Sienna;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 24);
             this.panel2.Name = "panel2";
@@ -181,7 +183,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.LightSalmon;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 74);
@@ -210,7 +212,7 @@
             // 
             // PnlFormularios
             // 
-            this.PnlFormularios.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.PnlFormularios.BackColor = System.Drawing.Color.PapayaWhip;
             this.PnlFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlFormularios.Location = new System.Drawing.Point(52, 74);
             this.PnlFormularios.Name = "PnlFormularios";
@@ -233,7 +235,6 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FrmPrincipal";
             this.Text = "Sistema de Ordem de Serviço";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

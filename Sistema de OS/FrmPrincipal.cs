@@ -24,32 +24,43 @@ namespace Sistema_de_OS
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Criar a variavel do formulario que desejo abrir
             Form produto = new FrmProduto();
-            // produto.Show();
-            produto.Show(this);
-            // produto.ShowDialog();
-            // produto.ShowDialog(this);
+            //Varrer o Painel e verificar os formulários abertos
+            foreach (Form item in PnlFormularios.Controls)
+            {
+                //Verificar se o formulário que desejo abrir já está aberto
+                if (produto.Name == item.Name)
+                {
+                    //Se estiver aberto trago ele para frente
+                    item.BringToFront();
+                    //Finalizar o código pq o formulário já esta aberto
+                    return;
+                }
+            }
+            produto.TopLevel = false;
+            produto.Dock = DockStyle.Fill;
+            PnlFormularios.Controls.Add(produto);
+            produto.Show();
+            produto.BringToFront();
         }
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Instanciando o formulário
             Form cliente = new FrmCliente();
-
-            // TopLovel = Fora ou dentro de um Objeto
+            //cliente.Show(this);
+            //TopLevel = Externa ou dentro de outro Objeto
+            //Padrão é True trocamos para False
             cliente.TopLevel = false;
-
-            // DockStyle.Fill = Faz com que preencha toda tela (ou objeto, na qual ele esteja dentro)
+            //Dock para ocupar toda a area disponivel
             cliente.Dock = DockStyle.Fill;
-
-            // Adiciona o formulário inteiro no painel
+            //adiciona o formulario inteiro no painel 
             PnlFormularios.Controls.Add(cliente);
-
-            // Mostra o Formulário
+            //Mostrar o Formulário
             cliente.Show();
-
-            // Tráz o formulpario para frente
+            //Trazer o Formulário para a Frente
             cliente.BringToFront();
+
         }
     }
 }
