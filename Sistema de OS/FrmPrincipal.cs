@@ -24,13 +24,20 @@ namespace Sistema_de_OS
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Criar a variavel do formulario que desejo abrir
-            Form produto = new FrmProduto();
-            //Varrer o Painel e verificar os formulários abertos
+            AbrirFormulario(new FrmProduto());
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmCliente());
+        }
+
+        private void AbrirFormulario(Form formulario)
+        {
             foreach (Form item in PnlFormularios.Controls)
             {
                 //Verificar se o formulário que desejo abrir já está aberto
-                if (produto.Name == item.Name)
+                if (formulario.Name == item.Name)
                 {
                     //Se estiver aberto trago ele para frente
                     item.BringToFront();
@@ -38,29 +45,17 @@ namespace Sistema_de_OS
                     return;
                 }
             }
-            produto.TopLevel = false;
-            produto.Dock = DockStyle.Fill;
-            PnlFormularios.Controls.Add(produto);
-            produto.Show();
-            produto.BringToFront();
-        }
-
-        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form cliente = new FrmCliente();
-            //cliente.Show(this);
-            //TopLevel = Externa ou dentro de outro Objeto
-            //Padrão é True trocamos para False
-            cliente.TopLevel = false;
-            //Dock para ocupar toda a area disponivel
-            cliente.Dock = DockStyle.Fill;
-            //adiciona o formulario inteiro no painel 
-            PnlFormularios.Controls.Add(cliente);
-            //Mostrar o Formulário
-            cliente.Show();
-            //Trazer o Formulário para a Frente
-            cliente.BringToFront();
-
+            formulario.TopLevel = false;
+            formulario.Dock = DockStyle.Fill;
+            PnlFormularios.Controls.Add(formulario);
+            formulario.Show();
+            formulario.BringToFront();
+            ToolStripSplitButton botao = new ToolStripSplitButton 
+            {
+                Text = formulario.Text,
+                
+            };
+            SsrJanelas.Items.Add(botao);
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
