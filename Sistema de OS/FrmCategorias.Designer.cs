@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnFechar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -35,6 +36,9 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvTabela = new System.Windows.Forms.DataGridView();
             this.btnLocalizar = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cat_desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabela)).BeginInit();
@@ -101,12 +105,26 @@
             // 
             // dgvTabela
             // 
+            this.dgvTabela.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvTabela.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTabela.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTabela.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvTabela.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabela.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Column2,
+            this.cat_desc});
+            this.dgvTabela.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvTabela.Location = new System.Drawing.Point(6, 50);
             this.dgvTabela.Name = "dgvTabela";
+            this.dgvTabela.ReadOnly = true;
+            this.dgvTabela.RowHeadersVisible = false;
+            this.dgvTabela.RowHeadersWidth = 25;
+            this.dgvTabela.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTabela.Size = new System.Drawing.Size(1120, 392);
             this.dgvTabela.TabIndex = 0;
             // 
@@ -120,6 +138,30 @@
             this.btnLocalizar.Text = "Localizar";
             this.btnLocalizar.UseVisualStyleBackColor = true;
             this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "cat_codigo";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 60;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "cat_nome";
+            this.Column2.HeaderText = "Nome";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
+            // cat_desc
+            // 
+            this.cat_desc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cat_desc.DataPropertyName = "cat_descricao";
+            this.cat_desc.HeaderText = "Descrição";
+            this.cat_desc.Name = "cat_desc";
+            this.cat_desc.ReadOnly = true;
             // 
             // FrmCategorias
             // 
@@ -150,5 +192,8 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dgvTabela;
         private System.Windows.Forms.Button btnLocalizar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cat_desc;
     }
 }
