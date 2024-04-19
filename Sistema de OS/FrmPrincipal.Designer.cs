@@ -46,6 +46,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.SsrJanelas = new System.Windows.Forms.StatusStrip();
             this.PnlFormularios = new System.Windows.Forms.Panel();
+            this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -71,6 +72,7 @@
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.categoriasToolStripMenuItem,
             this.clienteToolStripMenuItem,
             this.produtosToolStripMenuItem,
             this.serviçosToolStripMenuItem,
@@ -213,6 +215,13 @@
             this.PnlFormularios.Size = new System.Drawing.Size(1197, 557);
             this.PnlFormularios.TabIndex = 12;
             // 
+            // categoriasToolStripMenuItem
+            // 
+            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.categoriasToolStripMenuItem.Text = "Categorias";
+            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
+            // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
@@ -237,7 +246,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.Text = "Sistema de Ordem de Serviço";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
@@ -272,6 +281,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.StatusStrip SsrJanelas;
         private System.Windows.Forms.Panel PnlFormularios;
+        private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
     }
 }
 

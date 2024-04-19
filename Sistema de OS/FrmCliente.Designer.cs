@@ -55,7 +55,7 @@
             // 
             // BtnFechar
             // 
-            this.BtnFechar.Location = new System.Drawing.Point(1038, 6);
+            this.BtnFechar.Location = new System.Drawing.Point(1038, 7);
             this.BtnFechar.Name = "BtnFechar";
             this.BtnFechar.Size = new System.Drawing.Size(120, 30);
             this.BtnFechar.TabIndex = 2;
@@ -73,7 +73,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCliente";
             this.Text = "Cliente";
             this.ResumeLayout(false);

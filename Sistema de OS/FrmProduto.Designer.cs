@@ -57,7 +57,7 @@
             // 
             this.btnFechar.BackColor = System.Drawing.Color.Transparent;
             this.btnFechar.BackgroundImage = global::Sistema_de_OS.Properties.Resources.Xbox_button_X_svg;
-            this.btnFechar.Location = new System.Drawing.Point(1038, 6);
+            this.btnFechar.Location = new System.Drawing.Point(1038, 7);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(120, 30);
             this.btnFechar.TabIndex = 3;
@@ -75,7 +75,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmProduto";
             this.Text = "Produto";
             this.ResumeLayout(false);
